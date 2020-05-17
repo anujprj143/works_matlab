@@ -1,0 +1,10 @@
+% how to generate & plot straight line y=ax+c
+x=1:100;
+a=5;
+c=20;
+y=a*x+c;
+plot(y)
+xlabel('input')
+ylabel('output')
+
+% we have tables for the variables
