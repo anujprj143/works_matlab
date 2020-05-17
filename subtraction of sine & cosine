@@ -1,0 +1,18 @@
+f=input('enter the frequency');
+t=0:0.001:0.1;
+t1=2*pi*f*t ; % wt(omega t)
+
+x1=sin(t1);
+subplot(311);
+plot(t,x1);
+title('sine wave');
+
+x2=cos(t1);
+subplot(312);
+plot(t,x2);
+title('cosine wave');
+
+y1=x1-x2;
+subplot(313);
+plot(t,y1);
+title('subtrction of 2 wave');
