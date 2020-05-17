@@ -1,0 +1,22 @@
+%generate & plot unit step sequemce
+%impulse signal has value high at a particular point &  at rest of the points its zero
+n=-10:10;     %21 values inclucding 0
+%the value should be high only at zero & at rest places it should be 1
+u=[zeros(1,10) 1 zeros(1,10)]; % assigning the value zero from 1 to 10 & then higher value to the middle & then zero to the remanining 
+stem(n,u);  	%stem plots the value at that instant
+
+
+o/p plots a graph
+
+
+%generate & plot unit step sequemce
+%impulse signal has value high at a particular point &  at rest of the points its zero
+n=-10:10;     %21 values inclucding 0
+%the value should be high only at zero & at rest places it should be 1
+u=[zeros(1,10) 1 zeros(1,10)];
+subplot(2,1,1)
+stem(n,u);  	%stem plots the value at that instant
+subplot(2,1,2)
+plot(n,u);
+
+%plot gives a continous value so when we give a high value to 1 particular so it makes a mountain type
