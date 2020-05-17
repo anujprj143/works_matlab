@@ -1,0 +1,7 @@
+%random signal of length 500 whose elements are distributed
+%in the range -2 to 2
+
+n=linspace(-2,2,500);	%500 values b/w -2 & 2
+y=rand(1,500);
+stem(n,y);
+title('random sequence');
