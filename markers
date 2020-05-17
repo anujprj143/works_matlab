@@ -1,0 +1,13 @@
+%specify colors & markers
+x=-p1:p1/10:p1;
+
+y1=sin(x);
+y2=sin(x-0.25)
+plot(x,y1); %default color
+
+
+plot(x,y1,'r'); %red color
+
+plot(x,y1,'r',x,y2,'g'); %for 2 colors
+
+plot(x,y1,'r',x,y2,'g' '); %produces markers
