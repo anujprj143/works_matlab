@@ -1,0 +1,21 @@
+%FFT(1st fourier transform) of a signal
+
+A=1;
+t=0:0.01:1;
+f=10;
+x=A*sin(2*pi*f*t);
+subplot(211);
+plot(t,x);
+xlabel('time');
+title('sinusoidal plot');
+
+
+%xft(fourier transform of signal x)
+
+xft=fft(x,1024);       %the distribution always has to be as the power of 2
+%the plot will be real & imaginary both
+%we need to plot the absolute values only so we will use the function abs
+xabs=abs(xft);
+subplot(212);
+plot(xabs);
+title('FFT plot');
