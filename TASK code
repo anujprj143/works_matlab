@@ -1,0 +1,54 @@
+%STEP 1
+load('db.mat')
+I=b;
+clear ALL
+clc
+FDetect=vision.CascadeObjectDector;
+I=imread(I);
+
+%how to read an image
+image=imread('l.jpeg')
+
+%how to display an image
+imshow(image);
+
+%how to write or save an image
+imwrite(image,"image.jpg")
+
+%STEP 2
+%rotation of image
+clc;
+clear all;
+close all;
+b=imrotate(I,45);
+subplot( 1 2 1);
+subimage(I);
+title('input image')
+subplot( 1 2 2);
+subimage(b);
+title('output image')
+
+
+%STEP 3
+%resizing an image
+
+disp('size of original image');
+disp(size(I));
+
+rez=imresize(im,0.2);
+disp('size of resized image');
+disp(size(rez));
+
+
+%step4
+%adaptive blurring
+len=21;
+theta=11;
+psf=fspecial('motion',len,theta);
+blurred=infilter(a,psf,'conv','circular');
+subplot(121);
+subimage(I);
+title('input image');
+subplot(122);
+subimage(blurred);
+title('blurred image');
