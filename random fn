@@ -1,0 +1,22 @@
+% random signal
+rand(1,10)  %list of random variables
+
+% generation of a random matrix
+rand(3)
+
+%it will generate an error
+%error:-size input must be scalar
+%which means its value should be 1 2 3 4
+rand([2 3],1,5)	%[range of input],rows,columns
+
+randi([2 3],1,5)
+
+y=randi(10);	%produces 1 integer value
+y
+
+y=randi(10,10);	%produces a matrix of 10*10 qith random values b/w 0&1
+y
+
+
+%randi produces integer values
+%rand produces real no values
