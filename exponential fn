@@ -1,0 +1,46 @@
+%y=ae^(-cn);
+%c=(-1/12)+j(pi/6);
+%complex signal - where we have real & complex term
+a=1+j;
+
+a=1+5*j;
+
+%gives a spiral graph
+n=1:100;
+a=1;
+c=(-1/12)+j*(pi/6);
+
+y=a*exp(-c*n);
+
+plot(y);
+
+
+%givesa a bit smooth curve
+
+a=1+5*j;
+
+n=1:100;
+a=1;
+c=(-1/12)+j*(pi/6);
+
+y=a*exp(-c*n);
+
+plot(n,y);
+
+
+
+n=1:100;
+a=1;
+c=(-1/12)+j*(pi/6);
+
+y=a*exp(-c*n);
+
+subplot(211)
+plot(y);
+subplot(212)
+plot(n,y);		%here we defined the x axis
+
+
+
+
+
