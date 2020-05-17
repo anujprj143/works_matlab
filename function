@@ -1,0 +1,10 @@
+%creating functions
+a=10;
+b=20;
+c=add1(a,b);
+
+
+%fn
+function f=add1(a,b)
+f=a+b;
+end
