@@ -1,0 +1,26 @@
+%for loop
+
+for i=1:10	% we dont put ; coz we have to continue the statement to the next line
+i
+end  
+% the value gets overwritten everytime & lastly the value that gets stored is the one on which the for loop terminates
+
+
+%factorial
+n=input(' enter  a value ');
+f=1;
+for i=1:1:n
+ f=f*i
+end
+f
+% displays the fcatorial at every pt
+
+
+%factorial of the required no.
+n=input('the value of n: ');
+f=1;
+for i=1:n
+f=f*i;
+end
+disp('factorial is')
+disp(f)
