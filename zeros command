@@ -1,0 +1,40 @@
+zeros command
+a=[2 6 5 2
+    8 1 3 5
+    3 3 5 6 
+    5 7 9 1
+    8 2 7 4];
+
+
+% replace the 6 mid nos by zeros
+
+newa=a;
+newa(2:4,2:3) = zeros()
+newa;
+
+o/p
+newa =
+
+     2     6     5     2
+     8     0     0     5
+     3     0     0     6
+     5     0     0     1
+     8     2     7     4
+
+
+% enter a column of 0s b/w each columns of matrix a
+a=[a(:,1),zeros(5,1),a(:,2),zeros(5,1),a(:,3),zeros(5,1),a(:,4)]
+
+o/p
+a =
+
+     2     0     6     0     5     0     2
+     8     0     1     0     3     0     5
+     3     0     3     0     5     0     6
+     5     0     7     0     9     0     1
+     8     0     2     0     7     0     4
+
+
+%MATLAB automatically allocates storage for matrices. Nevertheless, for large matrices, 
+MATLAB programs may execute faster if the zeros function is used to set aside storage 
+for a matrix whose elements are to be generated one at a time, or a row or column at a time
