@@ -1,0 +1,26 @@
+%amplitude modulation
+Am=5;
+Ac=5;
+m=1;
+f=10;
+fc=10*f;
+F=2000;
+T=1/F;
+t=0:T:1;
+subplot(311);
+xm=Am*sin(2*pi*f*t);
+plot(t,xm);
+title('message signal');
+
+
+%carrier
+xc=Ac*sin(2*pi*fc*t);
+subplot(312);
+plot(t,xc);
+title('carrier signal');
+
+%equation of modulated signal
+y=Ac+Am*(1+m*sin(2*pi*f*t)).*sin(2*pi*fc*t);
+subplot(313);
+plot(t,y);
+title('modulated signal');
