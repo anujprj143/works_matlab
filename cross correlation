@@ -1,0 +1,10 @@
+%cross correlation
+x=[1 , 2, 3,4];
+subplot(311);
+stem(x);
+h=[4,3,2,1];
+subplot(312);
+stem (h);
+subplot(313);
+y=xcorr(x,h);
+stem(y);
