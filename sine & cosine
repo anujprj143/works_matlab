@@ -1,0 +1,32 @@
+% plot a continuous wave
+% maintanins the continuity of time
+%sin cos r continuous signals we use plot command
+%discrete type signals we use stem command so that 1 value at 1 partticular time
+
+t=0:0.001:0.1;
+f=50;
+t1=2*pi*f*t ; % wt(omega t)
+x1=sin(t1);
+subplot(311);
+plot(t,x1);
+title('sine wave');
+
+x2=cos(t1);
+subplot(312);
+plot(t,x2);
+title('cosine wave');
+
+y=x1+x2;
+subplot(313);
+plot(t,y);
+title('addition of 2 signals');
+
+%user defined
+t=input('enter the time duration');
+t=0:0.1:t;
+f=50;
+t1=2*pi*f*t ; % wt(omega t)
+x1=sin(t1);
+subplot(311);
+plot(t,x1);
+title('sine wave');
