@@ -1,0 +1,30 @@
+%generate  & plot SAWTOOTH WAVE
+% AIM to plot a 50hz wave
+T=10*(1/50);
+fs=1000;
+dt=1/fs;
+t=0:dt:T-dt;   %since we started from 0 so T-dt
+%sawtooth is a type of non sinusoidal signal with period 2*pi*f*t
+x=sawtooth(2*pi*50*t);
+plot(t,x);
+xlabel('input');
+ylabel('output');
+title('SAWTOOTH WAVE');
+grid on;      %provides grid wherever there is occurence of values
+
+
+%we got the values for 1000 samples till 0.2 (n/50)
+%difference of 0.2
+
+
+%2nd method
+%geneate & plot sawtooth wave
+
+t=-10:0.01:10;
+y=sawtooth(t);
+
+plot(t,y);
+xlabel('time');
+ylabel('amplitude');
+title('Sawtooth wave');
+grid on;
